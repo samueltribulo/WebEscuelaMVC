@@ -1,0 +1,34 @@
+﻿@model WebEscuelaMVC.Models.Aula
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+
+
+    <div>
+
+        <h1>
+
+                @Html.DisplayNameFor(model=>model.Numero)
+                @Html.DisplayFor(model=>model.Numero)
+
+        </h1>
+
+        <p>
+
+            @Html.DisplayNameFor(model=>model.Estado)
+            @Html.DisplayFor(model=>model.Estado)
+
+        </p>
+
+        @Html.ActionLink("Volver al index", "")
+    
+    </div>
+
+</body>
+</html>

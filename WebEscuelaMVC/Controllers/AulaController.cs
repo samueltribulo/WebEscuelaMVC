@@ -28,7 +28,7 @@ namespace WebEscuelaMVC.Controllers
         public ActionResult Create()
         {
             Aula aula = new Aula();
-            return View("Register", aula);
+            return View("Create", aula);
         }
 
         [HttpPost]
@@ -63,7 +63,7 @@ namespace WebEscuelaMVC.Controllers
 
             if (aula == null) return NotFound();
 
-            return View("Edit");
+            return View("Edit", aula);
 
         }
 
