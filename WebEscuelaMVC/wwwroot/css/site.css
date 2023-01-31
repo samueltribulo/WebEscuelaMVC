@@ -1,11 +1,10 @@
 ﻿*{
     box-sizing: border-box;
 }
-body{
-
+body {
     display: grid;
     grid-template-areas: "Top Top Top Top"
-                         "Menu Content Content Content"
+                         "Main Main Main Main"
                          "Footer Footer Footer Footer";
     grid-template-rows: 1fr 2fr 0.5fr;
     width: 100vw;
@@ -18,13 +17,21 @@ body{
     background-color: red;
 }
 
+main{
+    display: flex;
+    grid-area: Main;
+    width: 100%;
+}
+
 #Menu {
-    grid-area: Menu;
+    height: 100%;
+    width: 20%;
     background-color: blue;
 }
 
 #Content {
-    grid-area: Content;
+    height: 100%;
+    width: 80%;
     background-color: cornflowerblue;
 }
 
