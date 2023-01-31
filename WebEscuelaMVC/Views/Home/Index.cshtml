@@ -1,14 +1,7 @@
 ﻿
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-
+@{
+    ViewData["Title"] = "About Aula";
+}
 
     <h1>
         @ViewBag.Saludo
@@ -19,5 +12,3 @@
 
     @Html.ActionLink("Ir a la lista de Aulas", "Index", "Aula")
 
-</body>
-</html>
