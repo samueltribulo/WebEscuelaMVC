@@ -1,14 +1,8 @@
 ﻿@model WebEscuelaMVC.Models.Aula
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
-</head>
-<body>
-
+@{
+    ViewData["Title"] = "Create Aula";
+}
     <h1>Crear Aula</h1>
 
     @using (Html.BeginForm("Create", "Aula", FormMethod.Post))
@@ -35,5 +29,3 @@
 
     }
 
-</body>
-</html>

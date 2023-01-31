@@ -11,5 +11,9 @@ namespace WebEscuelaMVC.Controllers
             ViewBag.Fecha = DateTime.Now.ToString();
             return View();
         }
+        public  IActionResult About()
+        {
+            return View();
+        }
     }
 }
